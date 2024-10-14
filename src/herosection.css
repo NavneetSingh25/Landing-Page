@@ -1,0 +1,39 @@
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.fade-out {
+  animation: fadeOut 2s ease-in-out forwards;
+}
+
+body {
+  background-color: #0b0d17; /* Dark space background */
+  background-image: 
+    url('../assets/Galaxy-g.jpg'),  /* Galaxy background */
+    radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 80%), /* Subtle starry pattern */
+    linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,50,0.8) 100%); /* Dark gradient effect */
+  background-size: cover, 100% 100%, 100% 100%;
+  background-position: center, top, bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* So background remains in place during scrolling */
+}
+
